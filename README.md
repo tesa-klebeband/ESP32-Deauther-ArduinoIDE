@@ -11,6 +11,7 @@ Building is currently done using the Arduino-ide, although it should be possible
 The platform.txt for the ESP32 is commonly located under: `~/.arduino15/packages/esp32/hardware/esp32/{version}/platform.txt`. Make sure you to replace `{version}` with the currently installed version of the ESP32 dev enviroment (for example 2.0.9). Open the file in your favourite text editor and add:
 * **-zmuldefs** to **compiler.c.elf.libs.esp32**
 * **-w** to **build.extra_flags.esp32**
+
 This will allow the c compiler to tolerate multiple definitions, which are used to bypass the deauthentication frame check in the ESP32's firmware. After this you can hit upload in the Arduino-ide.
 ## Using ESP32-Deauther
 The ESP32 hosts a WiFi network with the name of `ESP32-Deauther` and a password of `esp32wroom32`. Connect to this network and type the IP of your ESP32 (typically **192.168.4.1**) into a webbrowser of a choice. You will see the following options:
