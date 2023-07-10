@@ -23,10 +23,10 @@ void handle_root() {
   html += "<form method='post' action='/rescan'><input type='submit' value='Rescan networks'></form><hr>";
   html += "<form method='post' action='/deauth'>Network Number: <input type='text' name='net_num'><br>Reason code: <input type='text' name='reason'><br><input type='submit' value='Launch Deauth-Attack'></form>";
   html += "Eliminated stations: " + String(eliminated_stations) + "<br><hr>";
-  html += "<form method='post' action='/deauth_all'>Reason code: <input type='text' name='reason'><input type='submit' value='Deauth all Networks'></form><hr>";
+  html += "<form method='post' action='/deauth_all'>Reason code: <input type='text' name='reason'><br><input type='submit' value='Deauth all Networks'></form><hr>";
   html += "<form method='post' action='/stop'><input type='submit' value='Stop Deauth-Attack'></form>";
   
-  html += "<table><tr><th>Reason code</th><th>Meaning</th></tr>";
+  html += "<table border='1'><tr><th>Reason code</th><th>Meaning</th></tr>";
   html += "<tr><td>0</td><td>Reserved.</td></tr>";
   html += "<tr><td>1</td><td>Unspecified reason.</td></tr>";
   html += "<tr><td>2</td><td>Previous authentication no longer valid.</td></tr>";
