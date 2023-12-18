@@ -3,7 +3,7 @@ A tool for the ESP32 with the ability to deauthenticate stations connected to Wi
 # DISCLAIMER
 This tool has been made for educational and testing purposes only. Any misuse or illegal activities conducted with the tool are strictly prohibited. I am **not** responsible for any consequences arising from the use of the tool, which is done at your own risk.
 ## Building
-Building is currently done using the Arduino-ide, although it should be possible to build it with, for example, PlatformIO.
+Building is done using the ArduinoIDE. However, I recommend using PlatformIO and vscode. Please use `tesa-klebeband/ESP32-Deauther` for the PlatformIO version.
 ### Requirements
 * ESP32 dev enviroment for Arduino-ide (or PIO)
 * A patched platform.txt to allow linking with multiple definitions
